@@ -10,14 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @org.springframework.web.bind.annotation.RestController
 public class RestController {
-    @Autowired
-    UserDao userDao;
-    @Autowired
-    ToDoDao toDoDao;
-    @Autowired
-    ToDo toDo;
-    @Autowired
-    User user;
+    @Autowired UserDao userDao; @Autowired ToDoDao toDoDao; @Autowired ToDo toDo;
+    @Autowired User user;
 
     @RequestMapping("/hello")
     public String sayHello(){
